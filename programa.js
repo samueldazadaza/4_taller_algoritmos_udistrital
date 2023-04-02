@@ -43,7 +43,27 @@ function media(){
     return promedio;
 }
 
-// 6. TAREA: 8am a 8:30am
+// 6. TAREA: 8am a 8:30am************************
+// 6. Un alumno desea saber cual sera su calificación final en la materia de Algoritmos. Dicha calificación se compone de los siguientes porcentajes:
+// a. 55% del promedio de sus tres calificaciones parciales.
+// b. 30% de la calificación del examen final.
+// c. 15% de la calificación de un trabajo final.
 
-// 7. zzzz
+
+// 7. ejercicio vehiculo con diferentes velocidades
+
+function calcular_tiempo(){
+    let v1 = parseInt(document.getElementById("x").value);
+    let v2 = parseInt(document.getElementById("y").value);
+    let d = parseInt(document.getElementById("z").value);
+
+    let t = d/(v1 - v2);
+    let tf = (t * 60);
+
+    let resultado = document.getElementById("resultado");
+    resultado.value = tf;
+    return tf;
+}
+calcular_tiempo()
+
 
