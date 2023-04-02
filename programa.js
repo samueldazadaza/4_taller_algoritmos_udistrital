@@ -1,5 +1,24 @@
 // 1. escribir un programa que pregunte al usuario su nombre, y luego lo salude.
+let nombre;
+nombre = prompt();
+
+//document.write(nombre);
+console.log("hola" + nombre);
+
+
 // 2. calcular el perimetro y area de un rectangulo dada su base y altura.
+function calcular_area(base, altura){
+    const area = base * altura;
+    const perimetro = 2 * (base + altura);
+
+    return [area, perimetro]
+}
+//retornar valores
+let resultado = calcular(5,4);
+//imprimir el area
+console.log(resultado[0])
+
+
 
 // 3. dados los catetos de un triangulo rectangulo, calcular su hipotenusa.
 function calcular_hipotenusa(a, b){
